@@ -218,6 +218,99 @@ INSERT INTO FlyingTest VALUES (8, 6, 5, 'Fail', 20161225);
 INSERT INTO FlyingTest VALUES (9, 9, 5, 'Fail', 20161230);
 INSERT INTO FlyingTest VALUES (10, 10, 5, 'Pass', 20170101);
 
+INSERT INTO DepartmentOfAirTraffic (department_id, country_name, department_name) VALUES (1, 'Taiwan', 'Department of Air Traffic');
+INSERT INTO DepartmentOfAirTraffic VALUES (5, 'United States', 'Department of Air Traffic');
+INSERT INTO DepartmentOfAirTraffic VALUES (3, 'Korea', 'Department of Air Traffic');
+INSERT INTO DepartmentOfAirTraffic VALUES (2, 'Thailand', 'Department of Air Traffic');
+INSERT INTO DepartmentOfAirTraffic VALUES (10, 'Japan', 'Department of Air Traffic');
+
+INSERT INTO Funds (transfer_id, date, amount) VALUES (1, 20000305, 100);
+INSERT INTO Funds VALUES (2, 20030405, 150);
+INSERT INTO Funds VALUES (3, 20030509, 150);
+INSERT INTO Funds VALUES (4, 20060909, 150);
+INSERT INTO Funds VALUES (5, 20100312, 150);
+
+INSERT INTO TrafficRules (rule_id, information, established_date)  VALUES (1, 'Cars & airplanes cannot cross when the light is red', 20000101);
+INSERT INTO TrafficRules VALUES (2, 'Cars can only cross when the light is purple', 20031001);
+INSERT INTO TrafficRules VALUES (3, 'Airplanes cannot cross when the light is purple', 20040305);
+INSERT INTO TrafficRules VALUES (4, 'Airples can only cross when the light is orange', 20040209);
+INSERT INTO TrafficRules VALUES (5, 'Both cars and airplanes can cross when the light is black', 20101103);
+
+INSERT INTO Government (country_name) VALUES ('Taiwan');
+INSERT INTO Government VALUES ('United States');
+INSERT INTO Government VALUES ('Korea');
+INSERT INTO Government VALUES ('Thailand');
+INSERT INTO Government VALUES ('Japan');
+
+INSERT INTO Buys (department_id, license_id, transaction_id, amount) VALUES (1, 1, 1, 100);
+INSERT INTO Buys VALUES (1, 2, 2, 120);
+INSERT INTO Buys VALUES (1, 3, 3, 200);
+INSERT INTO Buys VALUES (1, 4, 4, 400);
+INSERT INTO Buys VALUES (1, 5, 5, 50);
+
+INSERT INTO Sells (department_id, license_id, transaction_id, amount) VALUES (1, 1, 1, 100);
+INSERT INTO Sells VALUES (1, 2, 2, 120);
+INSERT INTO Sells VALUES (1, 3, 3, 200);
+INSERT INTO Sells VALUES (1, 4, 4, 400);
+INSERT INTO Sells VALUES (1, 5, 5, 50);
+
+INSERT INTO ToAdminister (test_id, employee_id) VALUES (1, 2);
+INSERT INTO ToAdminister VALUES (2, 2);
+INSERT INTO ToAdminister VALUES (3, 2);
+INSERT INTO ToAdminister VALUES (4, 3);
+INSERT INTO ToAdminister VALUES (5, 4);
+INSERT INTO ToAdminister VALUES (6, 2);
+INSERT INTO ToAdminister VALUES (7, 5);
+INSERT INTO ToAdminister VALUES (8, 6);
+INSERT INTO ToAdminister VALUES (9, 9);
+INSERT INTO ToAdminister VALUES (10, 10);
+
+INSERT INTO Receive (department_id, transfer_id) VALUES (1, 1);
+INSERT INTO Receive VALUES (1, 2);
+INSERT INTO Receive VALUES (1, 3);
+INSERT INTO Receive VALUES (1, 4);
+INSERT INTO Receive VALUES (1, 5);
+
+INSERT INTO Establish (department_id, rule_id) VALUES (1, 1);
+INSERT INTO Establish VALUES (1, 2);
+INSERT INTO Establish VALUES (1, 3);
+INSERT INTO Establish VALUES (1, 4);
+INSERT INTO Establish VALUES (1, 5);
+
+INSERT INTO ThroughTheVotingOf (country_name, rule_id) VALUES ('Taiwan', 1);
+INSERT INTO ThroughTheVotingOf VALUES ('Taiwan', 2);
+INSERT INTO ThroughTheVotingOf VALUES ('Taiwan', 3);
+INSERT INTO ThroughTheVotingOf VALUES ('Taiwan', 4);
+INSERT INTO ThroughTheVotingOf VALUES ('Taiwan', 5);
+
+INSERT INTO AdministerFor (test_id, customer_id) VALUES (1, 1);
+INSERT INTO AdministerFor VALUES (2, 1);
+INSERT INTO AdministerFor VALUES (3, 1);
+INSERT INTO AdministerFor VALUES (4, 2);
+INSERT INTO AdministerFor VALUES (5, 2);
+INSERT INTO AdministerFor VALUES (6, 4);
+INSERT INTO AdministerFor VALUES (7, 5);
+INSERT INTO AdministerFor VALUES (8, 5);
+INSERT INTO AdministerFor VALUES (9, 5);
+INSERT INTO AdministerFor VALUES (10, 5);
+
+INSERT INTO Hire (department_id, employee_id) VALUES (1, 1);
+INSERT INTO Hire VALUES (1, 2);
+INSERT INTO Hire VALUES (1, 3);
+INSERT INTO Hire VALUES (1, 4);
+INSERT INTO Hire VALUES (1, 5);
+INSERT INTO Hire VALUES (1, 6);
+INSERT INTO Hire VALUES (1, 7);
+INSERT INTO Hire VALUES (1, 8);
+INSERT INTO Hire VALUES (1, 9);
+INSERT INTO Hire VALUES (1, 10);
+
+INSERT INTO ReceiveFrom (transfer_id, country_name) VALUES (1, 'Taiwan');
+INSERT INTO ReceiveFrom VALUES (2, 'Taiwan');
+INSERT INTO ReceiveFrom VALUES (3, 'Taiwan');
+INSERT INTO ReceiveFrom VALUES (4, 'Taiwan');
+INSERT INTO ReceiveFrom VALUES (5, 'Taiwan');
+
 /* 5 simple queries
 Find the employee ID of “Erica Asher”
 Find the highest salary
